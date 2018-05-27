@@ -1,0 +1,266 @@
+body {
+    margin: 0px;
+    background: url(../images/grey_sandbag.png);
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #5E7F7E;
+    width: 100%;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 22px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4AAAA5;
+}
+
+hr {
+    height: 2px;
+    background-color: #ddd;
+    border: 1px solid #ddd; 
+}
+
+header {
+    background-color: white;
+    color: white;
+    margin: 0px;
+    border-bottom: 2px solid #cccccc;
+    box-shadow: 0px 1px .5px grey;
+}
+
+footer  {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    background-color: #666666;
+    z-index: 2;
+}
+
+ul {
+    color: #777777;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    white-space: nowrap;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 0px 14px 0px 14px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav {
+    position: absolute;
+    text-align: center; 
+    margin-left: 63%;
+    top: 0px;
+    margin-top: 26px; 
+    
+}
+
+section {
+    clear: both;
+    margin: 1.5% 24% 5% 24%;  
+    width: 50%;
+    height: auto;
+    overflow: auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 35px 31px 41px 31px;
+    line-height: 30px;
+    font-weight: lighter;
+}
+
+img {
+    margin-right: 25px;
+    float: left;
+}
+
+p {
+    margin-left: 5px;
+}
+
+input {
+    box-shadow: 0px .1px .5px grey;
+}
+
+.footText {
+    text-align: center;
+    font-size: 13px;
+    color: rgba(221, 221, 221, 0.438);
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.footLine {
+    background-color: #4AAAA5;
+    border: none;
+    margin-top: 0px;
+    height: 10px;
+    z-index: 1;
+}
+
+.textInput {
+    margin-bottom: 10px; 
+    width: 98%;
+    height: 20px;
+    border: .5px solid #ddd;
+    box-shadow: 0px 1px .5px grey;
+    font-size: 15px;
+    padding: 4px;
+}
+
+.textSubmit {
+    background-color: #4AAAA5;
+    border: none;
+    color: black;
+    margin-top: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+
+.show {
+    visibility: visible;
+    animation: fadeIn 1s;
+}
+
+.textSubmit:hover {
+    opacity: 1;
+    color: #FFF;
+}
+
+.profImage {
+    border: 1px solid #ddd;
+    box-shadow: 0px 1px .5px #ddd;
+}
+
+.portImage {
+    margin: 20px 20px 20px 35px;
+    box-shadow: 0px 1px .5px grey;
+    transition: .3s;
+}
+
+.portImage:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.sectContent{
+    margin-top: 27px;
+}
+
+.sectContact {
+    font-size: 20px;
+}
+
+.msg {
+    height: 200px;
+    margin-top: 10px;
+    resize: none;
+}
+
+
+#navName {
+    background-color: #4AAAA5;
+    width: 200px;
+    padding: 25px 20px 25px 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 24%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#portNav {
+    border-right: 2px solid #F6F6F6;
+    border-left: 2px solid #F6F6F6;
+}
+
+@media only screen and (max-width: 980px) {
+    section {
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+
+    #navName {
+        margin-left: 5%;
+    }
+
+    .footText { 
+        margin-top: 18px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    section {
+        margin: 3% 2% 5% 2%;
+        width: 88%;
+    }
+
+    .footText {
+        margin-top: 18px;
+    }
+
+    #navName {
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    header {
+        position: static;
+        height: 16vh;
+    }
+
+    nav {
+        position: static;
+        margin: auto;
+        display: block;
+    }
+
+    section {
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-top: 2%;
+        width: 86%;
+    }
+
+    img {
+        float: none;
+        margin: auto;
+        display: block;
+    }
+    ul {
+        margin: 16px 0px 16px 0px;
+    }
+
+    li {
+        float: none;
+        display: inline-block;
+        margin: auto;
+    }
+
+    #navName {
+        width: 100%;
+        margin: auto;
+    }
+
+    #navBar {
+        width: 100%;
+        height: 7vh;
+    }
+}
