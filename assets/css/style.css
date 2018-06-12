@@ -230,7 +230,6 @@ input {
 @media only screen and (max-width: 640px) {
     header {
         position: static;
-        height: 16vh;
     }
 
     nav {
